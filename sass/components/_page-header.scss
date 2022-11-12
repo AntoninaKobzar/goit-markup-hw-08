@@ -1,0 +1,129 @@
+.page-header {
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 145px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--button-active-color);
+    text-decoration: none;
+}
+.page-header__logo {
+    margin-right: 93px;
+}
+.logo__text {
+    color: var(--primary-text-color);
+    }
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    width: 281px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: auto;
+    list-style: none;
+}
+
+.site-nav__item {
+    display: flex;
+    display: block;
+    position: relative;
+
+&:not(:last-child) {
+    margin-right: 50px;
+}
+}
+
+.site-nav__link {
+    display: block;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--transition-timing-function);
+&:hover,
+&:focus,
+&:active {
+    color: var(--button-active-color);
+}
+}
+
+.site-nav__link--current::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: var(--button-active-color);
+    border-radius: 2px;
+}
+
+.site-auth {
+    display: flex;
+    align-items: center;
+    gap:30px;
+    padding: 0;
+    margin-left: 0;
+}
+
+.site-auth__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    color: var(--accent-text-color);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color var(--transition-timing-function);
+
+&:hover,
+&:focus {
+        color: var(--button-active-color);
+    }
+}
+
+.site-auth__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.site-auth__item {
+    display: flex;
+    min-width: 161px;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+
+&__item + &__item {
+    margin-left: 50px;
+}
+}
+
+
+
