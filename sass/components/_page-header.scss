@@ -1,67 +1,106 @@
+
 .page-header {
+    @media (min-width:480px) {
+    width:480px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin: 0 auto;
     width: 100%;
     border-bottom: 1px solid #ECECEC;
+    @media(min-width:768px) {
+            width: var(--bp-tablet);
+        }
+    @media(min-width:1200px) {
+            width: var(--bp-desktop);
+        }
+    }
 }
 
 .main-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
     display: flex;
-    width: 145px;
+    width: 134px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--button-active-color);
     text-decoration: none;
+    @media (min-width:1200px) {
+    width: 145px;
+    font-size: 26px;
+    line-height: 1.19;
+    }
 }
 .page-header__logo {
-    margin-right: 93px;
+    @media (min-width:768px) {
+        margin-right: 87px;
+    }
+    @media (min-width:1200px) {
+        margin-right: 92px;
+    }
 }
 .logo__text {
     color: var(--primary-text-color);
     }
 
-.page-header__burger-menu {
-
+.page-header__burger-button {
+    // position: absolute;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    // top: 10px;
+    // right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media(min-width: 768px) {
+    background-color: var(--aditional-color);
+    border: 0;
+    @media(min-width:768px) {
         display: none;
     }
 } 
 
 .site-nav {
-    
+    display: none;
+    @media(min-width:768px) {    
     display: flex;
     align-items: center;
-    width: 281px;
+    // width: 283px;
     padding-left: 0;
     margin-left: 0;
     margin-right: auto;
     list-style: none;
+    }
 }
 
 .site-nav__item {
+    @media(min-width:768px) {
     display: flex;
     display: block;
     position: relative;
+    
 
 &:not(:last-child) {
     margin-right: 50px;
 }
+    }
 }
 
 .site-nav__link {
     display: none;
+    
+@media (min-width:768px) {
+    display: flex;
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -72,17 +111,18 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color var(--transition-timing-function);
-&:hover,
-&:focus,
-&:active {
-    color: var(--button-active-color);
-}
-@media (min-width: 768px) {
-display: flex;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--button-active-color);
+    }
 }
 }
 
+
 .site-nav__link--current::after {
+    @media (min-width:768px){
     display: block;
     content: '';
     width: 100%;
@@ -92,54 +132,69 @@ display: flex;
     bottom: -2px;
     background-color: var(--button-active-color);
     border-radius: 2px;
+    }
 }
 
+
 .site-auth {
+    @media(min-width:768px) {
     display: flex;
     align-items: center;
     gap:30px;
     padding: 0;
     margin-left: 0;
+    }
 }
 
 .site-auth__link {
     display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 0;
-    color: var(--accent-text-color);
-    font-family: Roboto;
-    font-size: 14px;
-    line-height: 1.14;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color var(--transition-timing-function);
-
-&:hover,
-&:focus {
-        color: var(--button-active-color);
-    }
-        @media (min-width: 768px) {
+    @media (min-width:768px) {
             display: flex;
+            // flex-direction: column;
+            justify-content: center;
+                align-items: center;
+                padding: 32px 0;
+                color: var(--accent-text-color);
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 1.14;
+                font-weight: 500;
+                letter-spacing: 0.02em;
+                text-decoration: none;
+                transition: color var(--transition-timing-function);
+            
+                &:hover,
+                &:focus {
+                    color: var(--button-active-color);
+                }
         }
+    
+        // @media(min-width:1200px) {
+        //     flex-direction: row;
+        // }
+     
 }
 
 .site-auth__icon {
+    @media(min-width:1200px) {
     fill: currentColor;
     margin-right: 10px;
+    }
 }
 
 .site-auth__item {
+    list-style: none;
+    @media(min-width:1200px) {
     display: flex;
     min-width: 161px;
     flex-direction: row;
     align-items: center;
-    list-style: none;
+    
 
 &__item + &__item {
     margin-left: 50px;
 }
+    }
 }
 
 
