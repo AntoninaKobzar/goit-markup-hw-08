@@ -9,7 +9,7 @@
 //     background-position: center;
 //     background-size: cover;
 
-// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+// @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 //     background-image: url(../images/background@2x.jpg);
 // }
 // @media (--bp-tablet) {
