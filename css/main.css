@@ -810,10 +810,6 @@ summary {
 }
 
 .mobile-menu {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -849,29 +845,23 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
+  gap: 32px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  list-style: none;
-  gap: 32px;
-  margin-bottom: 302px;
-}
-
-.mobile-nav__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .mobile-nav__link {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -881,25 +871,13 @@ summary {
 }
 
 .mobile-auth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   list-style: none;
-  gap: 32px;
-}
-
-.mobile-auth__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: block;
 }
 
 .mobile-auth__link {
+  display: block;
+  margin-top: 302px;
+  margin-bottom: 32px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -910,7 +888,9 @@ summary {
   text-decoration: none;
 }
 
-.mobile-auth__item:last-child {
+.mobile-auth__email {
+  display: block;
+  margin-bottom: 64px;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -924,6 +904,8 @@ summary {
   display: flex;
   gap: 20px;
   margin-top: 64px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .mobile-net__link {
@@ -938,9 +920,7 @@ summary {
   color: #2196F3;
   text-decoration: none;
 }
-
-.mobile-net__link:not(:first-child)::before {
-  display: block;
+.mobile-net__link::before {
   content: "";
   position: absolute;
   left: -20px;

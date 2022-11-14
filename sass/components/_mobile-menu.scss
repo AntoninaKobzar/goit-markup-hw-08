@@ -1,5 +1,4 @@
 .mobile-menu {
-    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,41 +32,35 @@
 
 .mobile-nav {
     display: flex;
-    flex-direction: column;
     list-style: none;
     gap: 32px;
-    margin-bottom: 302px;
+    flex-direction: column;
+    align-self: flex-start;
 }
-.mobile-nav__item {
-    display: flex;
-    display: block;
-}
+
 .mobile-nav__link {
+    display: block;
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.18;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        color: var(--primary-text-color);
-        &:focus,
-        &:hover {
-            color: var(--button-active-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    &:focus,
+    &:hover {
+        color: var(--button-active-color);
         }
 }
 .mobile-auth {
-    display: flex;
-    flex-direction: column;
     list-style: none;
-    gap:32px;
 }
-.mobile-auth__item {
-    display: flex;
-    display: block;
-}
+
 .mobile-auth__link {
+    display: block;
+    margin-top: 302px;
+    margin-bottom: 32px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -78,7 +71,9 @@
     text-decoration: none;
 }
 
-.mobile-auth__item:last-child {
+.mobile-auth__email {
+    display: block;
+    margin-bottom: 64px;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -90,6 +85,8 @@
     display: flex;
     gap:20px;
     margin-top: 64px;
+    align-self: flex-end;
+    
 }
 .mobile-net__link {
     display: block;
@@ -102,17 +99,15 @@
     letter-spacing: 0.02em;
     color: #2196F3;
     text-decoration: none;
-}
 
-.mobile-net__link:not(:first-child)::before {
-        display: block;
-        content: "";
-        position: absolute;
-        left: -20px;
-        top: 10px;
-        width: 22px;
-        height: 0;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        transform: rotate(90deg);    
+&::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 22px;
+    height: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
 }
-    
+}
