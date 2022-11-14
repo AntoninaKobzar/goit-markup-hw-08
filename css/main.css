@@ -1268,6 +1268,189 @@ summary {
   margin: 0;
 }
 
+.section-staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 480px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  background-color: #F5F4FA;
+}
+@media (min-width: 1200px) {
+  .section-staff {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.staff__title {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+@media (min-width: 1200px) {
+  .staff__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.staff__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .staff__list {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .staff__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.card-staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 450px;
+  background: var(--aditional-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media (min-width: 768px) {
+  .card-staff {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-staff {
+    width: 270px;
+  }
+}
+
+.card-staff__photo {
+  display: block;
+  max-width: 100%;
+}
+
+.card-staff__text {
+  padding-top: 30px;
+}
+
+.card-staff__name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.card-staff__position {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+
+.card-net {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 16px 122px 24px 122px;
+}
+@media (min-width: 768px) {
+  .card-net {
+    padding: 16px 74px 24px 74px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-net {
+    padding: 16px 32px 30px 32px;
+  }
+}
+
+.card-net__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: background-color var(--transition-timing-function), color var(--transition-timing-function), fill var(--transition-timing-function);
+  transition: background-color var(--transition-timing-function), color var(--transition-timing-function), fill var(--transition-timing-function);
+  background-color: var(--aditional-color);
+  color: #AFB1B8;
+}
+.card-net__link:hover, .card-net__link:focus {
+  background-color: var(--button-active-color);
+  color: var(--aditional-color);
+}
+.card-net__link .card-net__icon {
+  fill: currentColor;
+}
+
 .footer {
   background-color: #2F303A;
   display: -webkit-box;
