@@ -21,7 +21,7 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-bottom: 30px;
-    @media (--bp-descktop) {
+    @media (min-width: 1200px) {
         font-size: 36px;
         line-height: 1.17;
         margin-bottom: 50px;
