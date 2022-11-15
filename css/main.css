@@ -1269,13 +1269,12 @@ summary {
 }
 
 .section-staff {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 100%;
   background-color: #F5F4FA;
 }
 @media (min-width: 1200px) {
@@ -1371,7 +1370,7 @@ summary {
 
 .card-staff__photo {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .card-staff__text {
