@@ -1,13 +1,12 @@
 .section-features {
-    min-width: 480px;
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
-    @media (min-width:1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    }
-    }
+            @media (min-width:1200px) {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
+        }
 
 .features {
     display: flex;

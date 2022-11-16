@@ -34,6 +34,11 @@ ul {
   margin: 0;
 }
 
+ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -52,6 +57,21 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -318,9 +338,7 @@ summary {
 }
 
 .section-hero {
-  min-width: 480px;
   width: 100%;
-  height: 400px;
   background-color: #C4C4C4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/phone-bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/phone-bg.jpg);
@@ -362,22 +380,14 @@ summary {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 480px;
   height: 400px;
   padding: 118px 60px;
-  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 768px) {
-  .container-hero {
-    width: 768px;
-  }
-}
 @media (min-width: 1200px) {
   .container-hero {
-    width: 1200px;
     height: 600px;
   }
 }
@@ -942,6 +952,8 @@ summary {
           transform: translateX(100%);
   width: 100%;
   height: 100%;
+  width: 480px;
+  max-height: 796px;
   background-color: var(--aditional-color);
   padding: 48px 40px;
   z-index: 1;
@@ -1058,7 +1070,6 @@ summary {
 }
 
 .section-features {
-  min-width: 480px;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1270,11 +1281,10 @@ summary {
 }
 
 .section-staff {
-  min-width: 480px;
   width: 100%;
+  background-color: #F5F4FA;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #F5F4FA;
 }
 @media (min-width: 1200px) {
   .section-staff {
@@ -1454,7 +1464,6 @@ summary {
 }
 
 .section-clients {
-  min-width: 480px;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1494,12 +1503,6 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media (max-width: 768px) {
-  .clients {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
 }
 @media (min-width: 768px) {
   .clients {
@@ -1596,7 +1599,6 @@ summary {
 }
 
 .footer {
-  min-width: 480px;
   width: 100%;
   background-color: #2F303A;
   display: -webkit-box;

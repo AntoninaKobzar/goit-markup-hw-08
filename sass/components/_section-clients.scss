@@ -1,16 +1,12 @@
 .section-clients {
-    min-width:480px;
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     @media(min-width:1200px) {
             padding-top: 94px;
-            padding-bottom: 94px
-
+            padding-bottom: 94px;
 }
 }
-
-
 .clients__title {
     display: block;
     display: flex;
@@ -31,10 +27,11 @@
 }
 .clients {
     display: flex;
+    // justify-content: center;
     
-    @media(max-width:768px) {
-            flex-basis: calc((100% - 30px) / 2);
-        }
+    // @media(max-width:768px) {
+    //         flex-basis: calc((100% - 30px) / 2);
+    //     }
     
         @media (min-width: 768px) {
             flex-basis: calc((100% - 60px) / 3);
