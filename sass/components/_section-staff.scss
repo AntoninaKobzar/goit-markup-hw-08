@@ -4,7 +4,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #F5F4FA;
-    
     @media(min-width:1200px) {
         padding-top: 94px;
         padding-bottom: 94px;        
@@ -66,6 +65,14 @@
 .card-staff__photo {
     display: block;
     width: 100%;
+    width: 450px;
+    @media(min-width:768px) {
+            width: 354px;
+        }
+    
+        @media (min-width:1200px) {
+            width: 270px;
+        }
 }
 
 .card-staff__text {

@@ -1,21 +1,20 @@
 .section-hero {
+    min-width:480px;
     width: 100%;
     height: 400px;
     background-color: #C4C4C4;
-    margin-left: auto;
-    margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/phone-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @media (min-width:768px) {
             background-image: url(../images/tablet-bg.jpg);
-            min-width: 768px;
+            // max-width: 768px;
         }
     
         @media (min-width: 1200px) {
             background-image: url(../images/dt-bg.jpg);
-            min-width: 1200px
+            // max-width: 1600px;
         }
 }
 
