@@ -1,21 +1,19 @@
 .footer {
+    min-width: 480px;
     width: 100%;
     background-color: #2F303A;
     display: flex;
     margin: 0 auto;
     @media(min-width:768px) {
-            min-width: 768px;
+            max-width: 768px;
         }
     @media(min-width:1200px) {
-            max-width: 1200px;
+            max-width: 1600px;
             align-items: baseline;
         }
-}
+    }
 
-.container-footer {
-    padding: 0 15px;
-    display: flex;
-}
+
 .footer__list {
     @media(min-width:768px) {
     flex-direction: row;
