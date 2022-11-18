@@ -967,7 +967,8 @@ summary {
 }
 
 .mobile-menu {
-  width: 100vh;
+  height: 100vh;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
@@ -1104,7 +1105,6 @@ summary {
 
 .section-features {
   width: 100%;
-  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1224,18 +1224,18 @@ summary {
 }
 
 .section-activities {
-  width: 480px;
   display: none;
-  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   .section-activities {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 94px;
     width: 100%;
-    width: auto;
   }
 }
 
@@ -1247,15 +1247,11 @@ summary {
 }
 
 .activities__title {
-  display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 366px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
