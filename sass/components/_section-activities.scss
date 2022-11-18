@@ -1,6 +1,7 @@
 .section-activities {
-    min-width: 480px;
+    width: 480px;
     display: none;
+    margin: 0 auto;
     @media(min-width:1200px) {
         display: flex;
         padding-bottom: 94px;
@@ -17,7 +18,7 @@
     display: block;
     display: flex;
     justify-content: center;
-    min-width: 366px;
+    width: 366px;
     font-family: Roboto;
     font-weight: 700;
     font-size: 36px;

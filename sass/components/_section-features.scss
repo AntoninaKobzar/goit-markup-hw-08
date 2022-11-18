@@ -1,6 +1,6 @@
 .section-features {
     width: 100%;
-    min-width: 480px;
+    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
             @media (min-width:1200px) {
@@ -29,10 +29,6 @@
     flex-direction: column;
     width: 450px;
     list-style: none;
-    
-        &:not(:last-child) {
-                margin-bottom: 30px;
-        }
     @media (min-width:768px) {
             width: 354px;
              flex-basis: calc((100% - 1 * 30px) / 2);

@@ -54,13 +54,13 @@ ul {
 }
 
 .container {
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -339,7 +339,7 @@ summary {
 
 .section-hero {
   width: 100%;
-  min-width: 480px;
+  width: 480px;
   background-color: #C4C4C4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/phone-bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/phone-bg.jpg);
@@ -351,12 +351,14 @@ summary {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-bg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-bg.jpg);
+    width: 768px;
   }
 }
 @media (min-width: 1200px) {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/dt-bg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dt-bg.jpg);
+    width: 1600px;
   }
 }
 
@@ -464,7 +466,7 @@ summary {
 }
 
 .page-header {
-  min-width: 480px;
+  width: 480px;
   width: 100%;
   border-bottom: 1px solid #ECECEC;
 }
@@ -716,7 +718,7 @@ summary {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 450px;
-  max-height: 609px;
+  height: 609px;
   height: 100%;
   padding: 40px;
   border-radius: 4px;
@@ -878,11 +880,17 @@ summary {
   padding-left: 28px;
   font-family: Roboto;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
   margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__icon--checked {
@@ -959,13 +967,10 @@ summary {
 }
 
 .mobile-menu {
-  width: 100%;
-  height: 100%;
+  width: 100vh;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  max-width: 480px;
-  max-height: 796px;
   display: none;
   position: fixed;
   top: 0;
@@ -986,6 +991,19 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.mobile-menu .mobile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .mobile-menu__close-button {
   position: absolute;
@@ -1012,7 +1030,6 @@ summary {
   -ms-flex-item-align: start;
       align-self: flex-start;
   height: 100%;
-  margin-bottom: auto;
 }
 
 .mobile-nav__link {
@@ -1036,7 +1053,6 @@ summary {
 
 .mobile-auth__link {
   display: block;
-  margin-top: 302px;
   margin-bottom: 32px;
   font-family: "Roboto";
   font-style: normal;
@@ -1064,7 +1080,6 @@ summary {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  margin-top: 64px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -1089,7 +1104,7 @@ summary {
 
 .section-features {
   width: 100%;
-  min-width: 480px;
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1135,9 +1150,6 @@ summary {
           flex-direction: column;
   width: 450px;
   list-style: none;
-}
-.features__list:not(:last-child) {
-  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .features__list {
@@ -1212,8 +1224,9 @@ summary {
 }
 
 .section-activities {
-  min-width: 480px;
+  width: 480px;
   display: none;
+  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   .section-activities {
@@ -1241,7 +1254,7 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 366px;
+  width: 366px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
@@ -1302,7 +1315,6 @@ summary {
 
 .section-staff {
   width: 100%;
-  min-width: 480px;
   background-color: #F5F4FA;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1329,7 +1341,6 @@ summary {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 30px;
-  margin-top: 60px;
 }
 @media (min-width: 1200px) {
   .staff__title {
@@ -1486,7 +1497,6 @@ summary {
 
 .section-clients {
   width: 100%;
-  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1622,7 +1632,6 @@ summary {
 
 .footer {
   width: 100%;
-  min-width: 480px;
   background-color: #2F303A;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1630,7 +1639,7 @@ summary {
 }
 
 .footer__list {
-  width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .footer__list {
@@ -1647,7 +1656,13 @@ summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 1170px;
+    width: 1170px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1655,12 +1670,13 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 231px;
+  width: 231px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 60px 0;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .footer__links {
@@ -1668,6 +1684,12 @@ summary {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    margin-left: 61px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__links {
+    margin: 0;
   }
 }
 
@@ -1752,6 +1774,7 @@ summary {
           flex-direction: column;
   gap: 20px;
   padding-bottom: 60px;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   .join-links {
@@ -1765,6 +1788,7 @@ summary {
 @media (min-width: 1200px) {
   .join-links {
     padding: 72px 0 100px 0;
+    margin-left: 0;
   }
 }
 
@@ -1838,12 +1862,6 @@ summary {
           flex-direction: column;
   padding-bottom: 60px;
 }
-@media (min-width: 768px) {
-  .signup {
-    width: 450px;
-    margin: 0 auto;
-  }
-}
 @media (min-width: 1200px) {
   .signup {
     padding: 72px 0 94px 0;
@@ -1852,8 +1870,7 @@ summary {
 }
 
 .signup__title {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   margin-bottom: 20px;
   font-family: Roboto;
   font-weight: 700;
@@ -1874,16 +1891,26 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   .signup__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-left: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -1893,11 +1920,8 @@ summary {
   display: flex;
   margin-bottom: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1918,6 +1942,7 @@ summary {
 }
 @media (min-width: 1200px) {
   .email__input {
+    width: 358px;
     margin-bottom: 0;
     margin-right: 12px;
     margin-left: 0;
@@ -1932,6 +1957,7 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

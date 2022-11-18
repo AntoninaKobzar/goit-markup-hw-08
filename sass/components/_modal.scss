@@ -26,7 +26,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
-    max-height: 609px;
+    height: 609px;
     height: 100%;
     padding: 40px;
     border-radius: 4px;
@@ -175,11 +175,15 @@
     padding-left: 28px;
     font-family: Roboto;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
     margin-bottom: 30px;
+    @media(min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 .checkbox__icon--checked {
