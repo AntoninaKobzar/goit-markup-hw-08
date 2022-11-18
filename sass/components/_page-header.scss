@@ -2,8 +2,6 @@
 .page-header {
     min-width: 480px;
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -31,12 +29,17 @@
     }
 }
 .page-header__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
     @media (min-width:768px) {
         margin-right: 87px;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
     @media (min-width:1200px) {
         margin-right: 92px;
-        margin-top: 25px;
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 }
 .logo__text {

@@ -349,28 +349,33 @@ summary {
 }
 @media (min-width: 768px) {
   .section-hero {
-    background-image: url(../images/tablet-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-bg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-bg.jpg);
   }
 }
 @media (min-width: 1200px) {
   .section-hero {
-    background-image: url(../images/dt-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/dt-bg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dt-bg.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
-    background-image: url(../images/phone-bg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/phone-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/phone-bg@2x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
-    background-image: url(../images/tablet-bg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-bg@2x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
-    background-image: url(../images/dt-bg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/dt-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dt-bg@2x.jpg);
   }
 }
 .container-hero {
@@ -382,7 +387,8 @@ summary {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 400px;
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -390,6 +396,8 @@ summary {
 @media (min-width: 1200px) {
   .container-hero {
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -458,8 +466,6 @@ summary {
 .page-header {
   min-width: 480px;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -497,15 +503,22 @@ summary {
   }
 }
 
+.page-header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 @media (min-width: 768px) {
   .page-header__logo {
     margin-right: 87px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 @media (min-width: 1200px) {
   .page-header__logo {
     margin-right: 92px;
-    margin-top: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
