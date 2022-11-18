@@ -27,11 +27,6 @@
 }
 .clients {
     display: flex;
-    // justify-content: center;
-    
-    // @media(max-width:768px) {
-    //         flex-basis: calc((100% - 30px) / 2);
-    //     }
     
         @media (min-width: 768px) {
             flex-basis: calc((100% - 60px) / 3);

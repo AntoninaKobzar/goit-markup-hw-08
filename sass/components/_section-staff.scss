@@ -45,12 +45,15 @@
 
 .card-staff {
     display: flex;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    width: 450px;
     background: var(--aditional-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    @media(min-width:480px) {
+            width: 450px;
+        }
     @media(min-width:768px) {
     width: 354px;
         }
@@ -63,7 +66,9 @@
 .card-staff__photo {
     display: block;
     width: 100%;
-    width: 450px;
+    @media(min-width:480px) {
+        width: 450px;    
+        }
     @media(min-width:768px) {
             width: 354px;
         }
