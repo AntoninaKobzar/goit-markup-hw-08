@@ -2204,16 +2204,16 @@ summary {
   margin-right: auto;
 }
 
-.photo {
+.card__photo {
   width: 450px;
 }
 @media (min-width: 768px) {
-  .photo {
+  .card__photo {
     width: 354px;
   }
 }
 @media (min-width: 1200px) {
-  .photo {
+  .card__photo {
     width: 370px;
   }
 }
