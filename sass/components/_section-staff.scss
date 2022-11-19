@@ -109,7 +109,8 @@
     justify-content: center;
     list-style: none;
     flex-direction: row;
-    padding: 16px 122px 24px 122px;
+    padding-top: 16px;
+    padding-bottom: 24px;
     @media(min-width:768px) {
             padding: 16px 74px 24px 74px;
         }
