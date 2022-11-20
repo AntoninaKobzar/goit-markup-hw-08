@@ -32,17 +32,12 @@
 .filters {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 40px;
     flex-wrap: wrap;
     
     @media(min-width:768px) {
         flex-wrap: nowrap;
-        margin-bottom: 30px;
         justify-content: center;
         padding: 0;
-        }
-    @media(min-width:1200px) {
-        margin-bottom: 50px;
         }
 }
 
@@ -70,8 +65,19 @@
     align-items: center;
     margin: 0 auto;
     list-style: none;
+    
 }
+.example-card {
+margin-top: 25px;
 
+    @media(min-width:768px) {
+        margin-top: 30px;
+    }
+
+    @media(min-width:1200px) {
+        margin-top: 50px;
+    }
+}
 .card__item {
     display: flex;
     width: 100%;
