@@ -2097,7 +2097,6 @@ summary {
 }
 
 .card__list {
-  width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2110,16 +2109,6 @@ summary {
           align-items: center;
   margin: 0 auto;
   list-style: none;
-}
-@media (min-width: 768px) {
-  .card__list {
-    width: 768px;
-  }
-}
-@media (min-width: 1200px) {
-  .card__list {
-    width: 1170px;
-  }
 }
 
 .card__item {
